@@ -1,0 +1,21 @@
+{
+  "name": "online_compiler",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node src/server.js"
+  },
+  "devDependencies": {
+    "vite": "^7.0.4"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "express": "^5.1.0",
+    "https": "^1.0.0",
+    "tailwindcss": "^4.1.11"
+  }
+}

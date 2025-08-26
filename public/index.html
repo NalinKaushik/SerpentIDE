@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Python Compiler</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- CodeMirror 5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/monokai.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/python/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/addon/edit/matchbrackets.min.js"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-2xl font-bold mb-4">Online Python Compiler</h1>
+
+    <div class="mb-4 border rounded-lg overflow-hidden">
+      <textarea id="editor"># Write Python code here
+print("Hello, world!")</textarea>
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-sm font-medium mb-1">Stdin (optional)</label>
+      <textarea id="stdinInput" class="w-full border rounded p-2" rows="3" placeholder="Input to program..."></textarea>
+    </div>
+
+    <div class="flex gap-2 mb-4">
+      <button id="runBtn" class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Run ▶</button>
+      <button id="clearOutputBtn" class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">Clear Output</button>
+    </div>
+
+    <div>
+      <label class="block text-sm font-medium mb-1">Output</label>
+      <pre id="output" class="bg-black text-green-100 p-3 rounded h-64 overflow-auto whitespace-pre-wrap"># Output will appear here</pre>
+    </div>
+  </div>
+<script>
+     const editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
+      mode: 'python',
+      theme: 'monokai',
+      lineNumbers: true,
+      matchBrackets: true,
+      indentUnit: 4,
+      tabSize: 4
+    });
+    
+let runbtn = document.getElementById('runBtn');
+let reset = document.getElementById('clearOutputBtn');
+let inputtext = document.getElementById('stdinInput');
+let outputtext = document.getElementById('output');
+
+runbtn.onclick(async()=>{
+    const code = editor.getValue();
+    outputtext.innerText = "Running..."
+    try{
+        const res = await fetch('/python/run',{
+            method:'POST',
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify(
+                {code:code,
+                stdin:inputtext.value})
+        }).then(res=>res.json())
+        .then(data=>outputtext.innerText=data.output)
+
+    }catch(error){
+        console.error(error)
+    }
+    reset.onclick(()=>{
+      editor.innerText = '# Write Python code here'
+    })
+
+
+    
+
+})
+</script>
+</body>
+</html>
