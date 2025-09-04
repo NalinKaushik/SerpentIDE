@@ -16,6 +16,9 @@
   <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python"/>
 
   
+
+
+
 ⚡ Instant Execution	🎨 Syntax Highlighting	🛡️ Secure Sandbox	📱 Responsive UI	🐍 Python 3 Support
 </div>
 
