@@ -8,24 +8,11 @@
 </div>
 🛠️ TECH STACK
 <p align="center"> <a href="#"><img src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5" alt="HTML5"/></a> <a href="#"><img src="https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3" alt="CSS3"/></a> <a href="#"><img src="https://img.shields.io/badge/TailwindCSS-teal?style=for-the-badge&logo=tailwind-css" alt="TailwindCSS"/></a> <a href="#"><img src="https://img.shields.io/badge/Node.js-green?style=for-the-badge&logo=node.js" alt="Node.js"/></a> <a href="#"><img src="https://img.shields.io/badge/Express.js-darkgrey?style=for-the-badge" alt="Express.js"/></a> <a href="#"><img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python" alt="Python"/></a> </p>
-📂 PROJECT STRUCTURE
-online-python-compiler/
-│
-├─ backend/          # Node.js + Express server
-│  ├─ server.js
-│  └─ routes.js
-│
-├─ frontend/         # Frontend UI
-│  ├─ index.html
-│  ├─ style.css
-│  └─ script.js
-│
-├─ README.md
-└─ package.json
+
 
 💻 GETTING STARTED
 1️⃣ Clone the Repo
-git clone https://github.com/<your-username>/online-python-compiler.git
+git clone https://github.com/NalinKaushik/online-python-compiler.git
 cd online-python-compiler
 
 2️⃣ Install Dependencies
