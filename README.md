@@ -9,6 +9,7 @@
 ✨ FEATURES
 <div align="center">
 <img src="https://img.icons8.com/color/48/000000/bolt.png" alt="Fast"/>	<img src="https://img.icons8.com/color/48/000000/code.png" alt="Editor"/>	<img src="https://img.icons8.com/color/48/000000/shield.png" alt="Secure"/>	<img src="https://img.icons8.com/color/48/000000/responsive.png" alt="Responsive"/>	<img src="https://img.icons8.com/color/48/000000/python.png" alt="Python"/>
+
   
 ⚡ Instant Execution	🎨 Syntax Highlighting	🛡️ Secure Sandbox	📱 Responsive UI	🐍 Python 3 Support
 </div>
