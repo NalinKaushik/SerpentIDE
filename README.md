@@ -1,91 +1,71 @@
-⚡ Python Online Compiler
-
-🚀 A fast, lightweight, and user-friendly online Python compiler built with Node.js, Express, TailwindCSS, and CodeMirror.
-Run Python code directly in your browser with an interactive editor and clean UI.
-
-✨ Features
-
-✅ Online Python Execution – Write & run Python code in real-time
-✅ Modern UI – Built with TailwindCSS for a clean and responsive interface
-✅ Powerful Editor – Integrated CodeMirror with syntax highlighting
-✅ Fast Backend – Node.js + Express handles execution securely
-✅ Error Handling – Get detailed error messages instantly
-✅ Lightweight & Scalable – Optimized for performance
-
-🖥️ Tech Stack
-🔹 Frontend
-
-⚡ HTML5, TailwindCSS → Modern, responsive UI
-
-📝 JavaScript (Vanilla) → Interactive behavior
-
-🎨 CodeMirror → Code editor with syntax highlighting
-
-🔹 Backend
-
-🚀 Node.js → High-performance runtime
-
-🌐 Express.js → REST API for code execution
-
-🐍 Python → Code execution engine
-
-📸 Screenshots
-
-🔹 Editor Interface
+<p align="center"> </p> <h1 align="center">🌐 ONLINE PYTHON COMPILER</h1> <p align="center"> <a href="https://github.com/<your-username>/online-python-compiler"> <img src="https://img.shields.io/badge/GitHub-Repo-blue?style=for-the-badge&logo=github" alt="GitHub Repo"> </a> <a href="LICENSE"> <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge&logo=opensourceinitiative" alt="MIT License"> </a> <a href="https://nodejs.org/"> <img src="https://img.shields.io/badge/Node.js-v18-green?style=for-the-badge&logo=node.js" alt="Node.js"> </a> <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python" alt="Python"> </a> </p>
 
 
-🔹 Output Window
+
+🎬 DEMO
+<p align="center"> <img src="https://via.placeholder.com/900x450/FFC107/000000?text=Run+Python+Code+Online+GIF" alt="Demo GIF" title="Interactive Demo"/> </p>
 
 
-⚙️ Installation
+✨ FEATURES
+<div align="center">
 
-Clone the repo and run locally 👇
+  <img src="https://img.icons8.com/color/48/000000/bolt.png" alt="Fast"/>	
+  <img src="https://img.icons8.com/color/48/000000/code.png" alt="Editor"/>	
+  <img src="https://img.icons8.com/color/48/000000/shield.png" alt="Secure"/>	
+  <img src="https://img.icons8.com/color/48/000000/responsive.png" alt="Responsive"/>
+  <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python"/>
 
-# Clone the repository
-git clone https://github.com/your-username/python-online-compiler.git
+  
 
-# Go inside the project
-cd python-online-compiler
 
-# Install dependencies
+
+⚡ Instant Execution	🎨 Syntax Highlighting	🛡️ Secure Sandbox	📱 Responsive UI	🐍 Python 3 Support
+</div>
+
+
+
+🛠️ TECH STACK
+<p align="center"> <a href="#"><img src="https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5" alt="HTML5"/></a> <a href="#"><img src="https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3" alt="CSS3"/></a> <a href="#"><img src="https://img.shields.io/badge/TailwindCSS-teal?style=for-the-badge&logo=tailwind-css" alt="TailwindCSS"/></a> <a href="#"><img src="https://img.shields.io/badge/Node.js-green?style=for-the-badge&logo=node.js" alt="Node.js"/></a> <a href="#"><img src="https://img.shields.io/badge/Express.js-darkgrey?style=for-the-badge" alt="Express.js"/></a> <a href="#"><img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python" alt="Python"/></a> </p>
+
+
+💻 GETTING STARTED
+1️⃣ Clone the Repo
+git clone https://github.com/NalinKaushik/online-python-compiler.git
+cd online-python-compiler
+
+2️⃣ Install Dependencies
 npm install
 
-# Run server
-npm start
+3️⃣ Run the Server
+node backend/server.js
 
+4️⃣ Open in Browser
+http://localhost:3000
 
-Then open http://localhost:3000/
- 🌐
+🌟 HOW TO USE
 
-🚀 Usage
+Type Python code in the editor
 
-Open the compiler in your browser
+Click Run
 
-Write Python code in the editor
+Output and errors display instantly
 
-Click Run ▶
+Test multiple scripts safely
 
-See the output instantly below the editor
+🔮 FUTURE IMPROVEMENTS
+Feature	Status
+🌙 Dark Mode & Themes	✅ Planned
+🔐 User Authentication	✅ Planned
+📊 Python Libraries Support	✅ Planned
+🔗 Shareable Script Links	✅ Planned
+📣 WHY THIS PROJECT?
 
-🏆 Achievements
+✅ No need to install Python locally
 
-✅ Fully responsive compiler
+✅ Safe, interactive, beginner-friendly environment
 
-✅ Syntax highlighting with CodeMirror
+✅ Ideal for students, hobbyists, and developers
 
-✅ Backend execution with sandboxing
-
-✅ Minimal, clean design with TailwindCSS
-
-🤝 Contributing
-
-Pull requests are welcome! 🎉
-If you’d like to add new features (like multiple language support, dark mode, or file saving), feel free to fork & contribute.
-
-📜 License
+📌 LICENSE
 
 This project is licensed under the MIT License.
-
-🔥 Built with ❤️ using Node.js, Express, TailwindCSS & CodeMirror
-
-Would you like me to also add some badges (like Node.js, Express, Tailwind, etc.) at the top of the README for extra visual appeal?
