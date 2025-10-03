@@ -39,45 +39,5 @@ print("Hello, world!")</textarea>
       <pre id="output" class="bg-black text-green-100 p-3 rounded h-64 overflow-auto whitespace-pre-wrap"># Output will appear here</pre>
     </div>
   </div>
-<script>
-     const editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
-      mode: 'python',
-      theme: 'monokai',
-      lineNumbers: true,
-      matchBrackets: true,
-      indentUnit: 4,
-      tabSize: 4
-    });
-    
-let runbtn = document.getElementById('runBtn');
-let reset = document.getElementById('clearOutputBtn');
-let inputtext = document.getElementById('stdinInput');
-let outputtext = document.getElementById('output');
-
-runbtn.onclick(async()=>{
-    const code = editor.getValue();
-    outputtext.innerText = "Running..."
-    try{
-        const res = await fetch('/python/run',{
-            method:'POST',
-            headers:{"Content-Type":"application/json"},
-            body:JSON.stringify(
-                {code:code,
-                stdin:inputtext.value})
-        }).then(res=>res.json())
-        .then(data=>outputtext.innerText=data.output)
-
-    }catch(error){
-        console.error(error)
-    }
-    reset.onclick(()=>{
-      editor.innerText = '# Write Python code here'
-    })
-
-
-    
-
-})
-</script>
 </body>
 </html>
