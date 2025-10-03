@@ -17,16 +17,15 @@
 </head>
 <body class="bg-gray-100 p-6">
   <div class="max-w-6xl mx-auto">
-    <h1 class="text-2xl font-bold mb-4">Online Python Compiler</h1>
+    <h1 class="text-2xl font-bold mb-4 text-emerald-500">Online Python Compiler</h1>
 
-    <div class="mb-4 border rounded-lg overflow-hidden">
-      <textarea id="editor"># Write Python code here
-print("Hello, world!")</textarea>
+    <div class="mb-4 border rounded-lg overflow-hidden font-medium">
+      <textarea id="editor" ># Write Python code here</textarea>
     </div>
 
     <div class="mb-4">
       <label class="block text-sm font-medium mb-1">Stdin (optional)</label>
-      <textarea id="stdinInput" class="w-full border rounded p-2" rows="3" placeholder="Input to program..."></textarea>
+      <textarea id="stdinInput" class="w-full border rounded p-2" rows="3" placeholder="Input..."></textarea>
     </div>
 
     <div class="flex gap-2 mb-4">
@@ -39,5 +38,6 @@ print("Hello, world!")</textarea>
       <pre id="output" class="bg-black text-green-100 p-3 rounded h-64 overflow-auto whitespace-pre-wrap"># Output will appear here</pre>
     </div>
   </div>
+  <script src="../src/main.js"></script>
 </body>
 </html>

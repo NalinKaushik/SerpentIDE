@@ -12,7 +12,8 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, '../public')));
+app.use('/src', express.static(path.join(__dirname)));
 
 // HTTPS configuration
 const options = {
@@ -25,7 +26,7 @@ const httpsServer = https.createServer(options, app);
 // Root endpoint
 app.get('/', (req, res) => {
     
-    const indexPath = path.join(__dirname, 'public', 'index.html');
+    const indexPath = path.join(__dirname, '..' ,'public', 'index.html');
     
     res.sendFile(indexPath, (err) => {
         if (err) {
