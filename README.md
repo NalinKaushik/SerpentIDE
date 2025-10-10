@@ -323,23 +323,10 @@ Permission is hereby granted, free of charge, to any person obtaining a copy...
 🚀 How to Use This:
 Copy the entire content above (from # 🚀 PyBox to the end)
 
-Go to your GitHub repository: https://github.com/NalinKaushik/PyBox
 
-Click on README.md file
 
-Click the Edit button (✏️ pencil icon)
 
-Select all existing content and delete it
 
-Paste this beautiful content
+For any Query
+mailto : nalinkaushik4184@gmail.com
 
-Scroll down and commit with message: ✨ Update README with beautiful design
-
-🎯 Don't Forget to Update:
-Replace mailto:your.email@example.com with your actual email
-
-Update LinkedIn URL to your profile
-
-Add your website if you have one
-
-That's it! Your README will look absolutely stunning! 🌟
